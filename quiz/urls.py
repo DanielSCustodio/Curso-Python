@@ -21,7 +21,10 @@ from quiz.base import views
 urlpatterns = [
 
     path('admin/', admin.site.urls),
+    path('classificacao/', views.classificacao),
+    path('perguntas/<int:indice>',views.perguntas),
     path('', views.home),
+
 
 
 ]
